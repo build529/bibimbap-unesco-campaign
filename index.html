@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support Jeonju Bibimbap for UNESCO Heritage!</title>
+  <style>
+    :root {
+      --primary-green: #15803d;
+      --accent-orange: #ea580c;
+      --bg-color: #f7f4ef;
+      --card-bg: #ffffff;
+      --text-main: #1c1917;
+      --text-muted: #666059;
+      --line: #e5e0d8;
+    }
+
+    body {
+      margin: 0;
+      padding: 16px;
+      background-color: var(--bg-color);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .campaign-badge {
+      display: inline-block;
+      background-color: var(--primary-green);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin: 0 0 8px 0;
+      color: var(--text-main);
+    }
+
+    p.description {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin: 0 0 16px 0;
+    }
+
+    /* CARD CONTAINER FRAMEWORK */
+    .card-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: var(--card-bg);
+      border: 2px solid var(--primary-green);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0 0 8px 0;
+      color: var(--text-main);
+    }
+
+    .card-text {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0 0 12px 0;
+      line-height: 1.3;
+    }
+
+    /* IMAGE FITTING & SIZES */
+    img.fit-cover {
+      width: 100%;
+      max-width: 320px;
+      height: 200px;
+      object-fit: cover !important;
+      display: block;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    img.merch-img {
+      width: 100%;
+      max-width: 280px;
+      height: 160px;
+      object-fit: cover !important;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    /* BUTTONS */
+    .btn-map {
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #03c75a; /* Naver Green */
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 4px;
+    }
+
+    .btn-map:hover {
+      background-color: #02b351;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- HEADER & CAMPAIGN GOAL -->
+    <header>
+      <span class="campaign-badge">UNESCO Heritage Initiative</span>
+      <h1>Support Korean Bibimbap!</h1>
+      <p class="description">
+        We are collecting signatures at the Jeonju Bibimbap Festival to help register Korean Bibimbap as a UNESCO Intangible Cultural Heritage. Sign our petition and claim free rewards!
+      </p>
+    </header>
+
+    <!-- SECTION 1: BOOTH LOCATION & NAVER MAP -->
+    <section class="card-section" aria-label="Booth Location">
+      <h2 class="card-title">📍 How to Find Our Booth</h2>
+      <p class="card-text">Look for our official green banner near the main festival zone!</p>
+      
+      <!-- Booth Photo -->
+      <img src="images/booth-photo.jpg" alt="Bibimbap Festival Booth Location" class="fit-cover" />
+
+      <!-- Naver Map Direct Link -->
+      <a href="https://naver.me/xa5e9Tgd" target="_blank" rel="noopener" class="btn-map">
+        🗺️ Open Booth Location on Naver Map
+      </a>
+    </section>
+
+    <!-- SECTION 2: MERCHANDISE & REWARDS -->
+    <section class="card-section" aria-label="Signature Rewards">
+      <h2 class="card-title">🎁 Signature Rewards & Merchandise</h2>
+      <p class="card-text">Sign the petition at our booth and receive exclusive merchandise on the spot!</p>
+      
+      <!-- Merchandise Photo -->
+      <img src="images/merchandise-photo.jpg" alt="Exclusive Bibimbap Campaign Merchandise" class="merch-img" />
+    </section>
+
+    <footer>
+      <p>Thank you for promoting Korean Culinary Heritage! 🇰🇷</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
